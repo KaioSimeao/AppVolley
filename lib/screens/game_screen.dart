@@ -17,8 +17,7 @@ class _GameScreenState extends State<GameScreen> {
   @override
   void initState() {
     super.initState();
-    SystemChrome.setPreferredOrientations(
-        [DeviceOrientation.landscapeLeft]);
+    SystemChrome.setPreferredOrientations([DeviceOrientation.landscapeLeft]);
   }
 
   @override
@@ -43,9 +42,8 @@ class _GameScreenState extends State<GameScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
-                          onPressed: () async {
-                            await Navigator.of(context)
-                                .pushReplacementNamed('/');
+                          onPressed: () {
+                            Navigator.of(context).pop('/');
                           },
                           icon: Icon(
                             Icons.arrow_back,
@@ -118,8 +116,8 @@ class _GameScreenState extends State<GameScreen> {
                           ),
                           const Court(
                             ladoesquerdo: true,
-                            pontoladodireito: 1,
-                            pontoladoesquerdo: 2,
+                            pontoladodireito: 0,
+                            pontoladoesquerdo: 0,
                           ),
                           RichText(
                             text: TextSpan(
@@ -135,12 +133,15 @@ class _GameScreenState extends State<GameScreen> {
                               ],
                             ),
                           ),
-                          const Padding(
-                            padding: EdgeInsets.only(bottom: 5),
+                          Padding(
+                            padding: const EdgeInsets.only(bottom: 5),
                             child: RetangularButton(
                               texto: 'Placar Geral',
-                              rota: 'scoreboard_screen',
                               color: Colors.white,
+                              funcao: () {
+                                Navigator.of(context)
+                                    .pushNamed('/scoreboard_screen');
+                              },
                             ),
                           )
                         ],

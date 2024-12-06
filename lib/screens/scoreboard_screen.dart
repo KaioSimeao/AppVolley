@@ -1,3 +1,4 @@
+import 'package:avaliacao_1/constants.dart';
 import 'package:avaliacao_1/widgets/bottom_score_bar.dart';
 import 'package:avaliacao_1/widgets/score.dart';
 import 'package:flutter/material.dart';
@@ -18,12 +19,6 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
   }
 
   @override
-  void dispose() {
-    SystemChrome.setPreferredOrientations(DeviceOrientation.values);
-    super.dispose();
-  }
-
-  @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
@@ -39,8 +34,7 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                     children: [
                       IconButton(
                         onPressed: () async {
-                          await Navigator.of(context)
-                              .pushReplacementNamed('/game_screen');
+                          Navigator.of(context).pop('/game_screen');
                         },
                         icon: Icon(
                           Icons.arrow_back,
@@ -50,7 +44,7 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                       const Text(
                         'PLACAR GERAL',
                         style: TextStyle(
-                            color: Color(0xff2B4A8E),
+                            color: MyColors.kAzulMarinho,
                             fontSize: 30,
                             fontFamily: 'ConcertOne'),
                       ),

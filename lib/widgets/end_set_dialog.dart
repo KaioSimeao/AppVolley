@@ -1,3 +1,4 @@
+import 'package:avaliacao_1/constants.dart';
 import 'package:avaliacao_1/widgets/retangular_button.dart';
 import 'package:flutter/material.dart';
 
@@ -18,13 +19,13 @@ class EndSetDialog extends StatelessWidget {
             color: Colors.white,
           ),
         ),
-        child: const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 30, vertical: 10),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 10),
           child: Column(
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              Text(
+              const Text(
                 'FIM DE SET',
                 style: TextStyle(
                   color: Color(0xff2B4A8E),
@@ -32,7 +33,7 @@ class EndSetDialog extends StatelessWidget {
                   fontFamily: 'ConcertOne',
                 ),
               ),
-              Text(
+              const Text(
                 'Autoconviadados',
                 style: TextStyle(
                   color: Color(0xff2B4A8E),
@@ -40,7 +41,7 @@ class EndSetDialog extends StatelessWidget {
                   fontFamily: 'ConcertOne',
                 ),
               ),
-              Align(
+              const Align(
                 alignment: Alignment.centerRight,
                 child: Padding(
                   padding: EdgeInsets.only(right: 32),
@@ -59,13 +60,17 @@ class EndSetDialog extends StatelessWidget {
                 children: [
                   RetangularButton(
                     texto: 'Terminar',
-                    rota: '',
                     color: Colors.white,
+                    funcao: () async {
+                      Navigator.of(context).pop('/');
+                    },
                   ),
                   RetangularButton(
                     texto: 'Novo Set',
-                    rota: 'game_screen',
-                    color: Color(0xFFFFA33B),
+                    color: MyColors.kAmareloMostarda,
+                    funcao: () async {
+                      await Navigator.of(context).pushNamed('/');
+                    },
                   )
                 ],
               ),

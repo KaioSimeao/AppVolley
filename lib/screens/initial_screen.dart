@@ -70,10 +70,12 @@ class _InitialScreenState extends State<InitialScreen> {
                       ),
                     ),
                   ),
-                  const RetangularButton(
+                  RetangularButton(
                     texto: 'Iniciar',
-                    rota: 'game_screen',
                     color: Colors.white,
+                    funcao: () {
+                      Navigator.pushNamed(context, '/game_screen');
+                    },
                   )
                 ],
               ),
