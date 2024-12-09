@@ -59,11 +59,11 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                   ),
                 ),
               ),
-              Flexible(
+              const Flexible(
                 flex: 8,
                 child: Row(
                   children: [
-                    const Flexible(
+                    Flexible(
                       flex: 1,
                       child: Center(
                         child: Column(
@@ -81,7 +81,7 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                         ),
                       ),
                     ),
-                    const Flexible(
+                    Flexible(
                         flex: 2,
                         child: Center(
                           child: Row(
@@ -100,31 +100,19 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                           children: [
                             Text(
                               "0:24'90''",
-                              style: TextStyle(
-                                  color: Colors.grey[50],
-                                  fontSize: 15,
-                                  fontFamily: 'ConcertOne'),
+                              style: MyTextStyle.text20,
                             ),
                             Text(
                               "0:14'23''",
-                              style: TextStyle(
-                                  color: Colors.grey[50],
-                                  fontSize: 15,
-                                  fontFamily: 'ConcertOne'),
+                              style: MyTextStyle.text20,
                             ),
                             Text(
                               "0:35'04''",
-                              style: TextStyle(
-                                  color: Colors.grey[50],
-                                  fontSize: 15,
-                                  fontFamily: 'ConcertOne'),
+                              style: MyTextStyle.text20,
                             ),
                             Text(
                               "0:11'29''",
-                              style: TextStyle(
-                                  color: Colors.grey[50],
-                                  fontSize: 15,
-                                  fontFamily: 'ConcertOne'),
+                              style: MyTextStyle.text20,
                             ),
                           ],
                         ),
