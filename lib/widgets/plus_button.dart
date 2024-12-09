@@ -10,11 +10,12 @@ class PlusButton extends StatelessWidget {
       style: ElevatedButton.styleFrom(
           backgroundColor: const Color(0xff2B4A8E),
           shape: const CircleBorder(),
-          padding: const EdgeInsets.symmetric(horizontal: 10)),
+          padding: const EdgeInsets.symmetric(horizontal: 1)),
       onPressed: () => func,
-      child: Text(
-        "+",
-        style: TextStyle(color: Colors.grey[50], fontSize: 40),
+      child: Icon(
+        Icons.add,
+        size: 40,
+        color: Colors.grey[50],
       ),
     );
   }
