@@ -1,4 +1,4 @@
-import 'package:avaliacao_1/constants.dart';
+import 'package:avaliacao_1/themes/constants.dart';
 import 'package:flutter/material.dart';
 
 class Court extends StatefulWidget {

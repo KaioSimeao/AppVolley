@@ -1,4 +1,4 @@
-import 'package:avaliacao_1/constants.dart';
+import 'package:avaliacao_1/themes/constants.dart';
 import 'package:avaliacao_1/screens/game_screen.dart';
 import 'package:avaliacao_1/screens/initial_screen.dart';
 import 'package:avaliacao_1/screens/scoreboard_screen.dart';
