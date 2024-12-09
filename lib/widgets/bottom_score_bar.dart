@@ -18,9 +18,9 @@ class BottomScoreBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           RichText(
-            text: TextSpan(
+            text: const TextSpan(
               style: MyTextStyle.text30,
-              children: const [
+              children: [
                 TextSpan(text: 'Ziraldos: '),
                 TextSpan(
                     text: '3', style: TextStyle(color: MyColors.kAzulMarinho))
@@ -28,9 +28,9 @@ class BottomScoreBar extends StatelessWidget {
             ),
           ),
           RichText(
-            text: TextSpan(
+            text: const TextSpan(
               style: MyTextStyle.text30,
-              children: const [
+              children: [
                 TextSpan(text: 'Sicranos: '),
                 TextSpan(
                     text: '1', style: TextStyle(color: MyColors.kAzulMarinho))
@@ -38,9 +38,9 @@ class BottomScoreBar extends StatelessWidget {
             ),
           ),
           RichText(
-            text: TextSpan(
+            text: const TextSpan(
               style: MyTextStyle.text30,
-              children: const [
+              children: [
                 TextSpan(text: 'Autoconvidados: '),
                 TextSpan(
                     text: '8', style: TextStyle(color: MyColors.kAzulMarinho))
@@ -48,9 +48,9 @@ class BottomScoreBar extends StatelessWidget {
             ),
           ),
           RichText(
-            text: TextSpan(
+            text: const TextSpan(
               style: MyTextStyle.text30,
-              children: const [
+              children: [
                 TextSpan(text: 'Sparrings: '),
                 TextSpan(
                     text: '7', style: TextStyle(color: MyColors.kAzulMarinho))
