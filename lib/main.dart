@@ -16,7 +16,8 @@ class MainApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Avaliação 1',
-      theme: ThemeData.dark().copyWith(
+      theme: ThemeData(
+        fontFamily: 'ConcertOne',
         primaryColor: MyColors.kAzulCeu,
         scaffoldBackgroundColor: MyColors.kAzulCeu,
       ),
