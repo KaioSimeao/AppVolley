@@ -19,48 +19,41 @@ class BottomScoreBar extends StatelessWidget {
         children: [
           RichText(
             text: TextSpan(
-              style: TextStyle(
-                  color: Colors.grey[50],
-                  fontSize: 30,
-                  fontFamily: 'ConcertOne'),
+              style: MyTextStyle.text30,
               children: const [
-                TextSpan(text: 'Ziraldos:  '),
-                TextSpan(text: '3', style: TextStyle(color: MyColors.kAzulMarinho))
+                TextSpan(text: 'Ziraldos: '),
+                TextSpan(
+                    text: '3', style: TextStyle(color: MyColors.kAzulMarinho))
               ],
             ),
           ),
           RichText(
             text: TextSpan(
-              style: TextStyle(
-                  color: Colors.grey[50],
-                  fontSize: 30,
-                  fontFamily: 'ConcertOne'),
+              style: MyTextStyle.text30,
               children: const [
-                TextSpan(text: 'Sicranos:  '),
-                TextSpan(text: '1', style: TextStyle(color: MyColors.kAzulMarinho))
+                TextSpan(text: 'Sicranos: '),
+                TextSpan(
+                    text: '1', style: TextStyle(color: MyColors.kAzulMarinho))
               ],
             ),
           ),
           RichText(
             text: TextSpan(
-              style: TextStyle(
-                  color: Colors.grey[50],
-                  fontSize: 30,
-                  fontFamily: 'ConcertOne'),
+              style: MyTextStyle.text30,
               children: const [
-                TextSpan(text: 'Autoconvidados:  '),
-                TextSpan(text: '8', style: TextStyle(color: MyColors.kAzulMarinho))
+                TextSpan(text: 'Autoconvidados: '),
+                TextSpan(
+                    text: '8', style: TextStyle(color: MyColors.kAzulMarinho))
               ],
             ),
           ),
           RichText(
             text: TextSpan(
-              style: TextStyle(
-                  color: Colors.grey[50],
-                  fontSize: 30,
-                  fontFamily: 'ConcertOne'),
+              style: MyTextStyle.text30,
               children: const [
-                TextSpan(text: 'Sparrings:'),
+                TextSpan(text: 'Sparrings: '),
+                TextSpan(
+                    text: '7', style: TextStyle(color: MyColors.kAzulMarinho))
               ],
             ),
           ),
