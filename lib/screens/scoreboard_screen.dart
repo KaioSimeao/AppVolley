@@ -69,10 +69,14 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
-                            Icon(Icons.bar_chart_rounded),
-                            Icon(Icons.bar_chart_rounded),
-                            Icon(Icons.bar_chart_rounded),
-                            Icon(Icons.bar_chart_rounded),
+                            Icon(Icons.bar_chart_rounded,
+                                color: MyColors.kCorFontePrimaria),
+                            Icon(Icons.bar_chart_rounded,
+                                color: MyColors.kCorFontePrimaria),
+                            Icon(Icons.bar_chart_rounded,
+                                color: MyColors.kCorFontePrimaria),
+                            Icon(Icons.bar_chart_rounded,
+                                color: MyColors.kCorFontePrimaria),
                           ],
                         ),
                       ),
