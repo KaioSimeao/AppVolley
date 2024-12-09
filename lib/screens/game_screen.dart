@@ -205,6 +205,7 @@ class SideButton extends StatelessWidget {
         textAlign: orientation == SideOrientation.left
             ? TextAlign.left
             : TextAlign.right,
+        style: MyTextStyle.text30,
       ),
       trailing: orientation == SideOrientation.right
           ? SizedBox(height: 50, width: 50, child: PlusButton(func: () {}))
