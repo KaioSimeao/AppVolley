@@ -8,3 +8,10 @@ class MyColors {
   static const Color kAmareloMostarda = Color(0xFFFFA33B);
   static final Color? kCorFonte = Colors.grey[50];
 }
+
+class MyTextStyle {
+  static TextStyle text15 = TextStyle(
+      color: MyColors.kCorFonte, fontSize: 15, fontFamily: 'ConcertOne');
+  static TextStyle text30 = TextStyle(
+      color: MyColors.kCorFonte, fontSize: 30, fontFamily: 'ConcertOne');
+}
