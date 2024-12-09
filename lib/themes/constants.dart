@@ -10,9 +10,9 @@ class MyColors {
 }
 
 class MyTextStyle {
-  static const TextStyle text15 = TextStyle(
+  static const TextStyle text20 = TextStyle(
       color: MyColors.kCorFontePrimaria,
-      fontSize: 15,
+      fontSize: 20,
       fontFamily: 'ConcertOne');
   static const TextStyle text30 = TextStyle(
       color: MyColors.kCorFontePrimaria,
