@@ -5,7 +5,11 @@ class TeamCard extends StatelessWidget {
   final String letra;
   final String nome;
   final bool teamName;
-  const TeamCard({super.key, required this.letra, required this.nome, required this.teamName});
+  const TeamCard(
+      {super.key,
+      required this.letra,
+      required this.nome,
+      required this.teamName});
 
   @override
   Widget build(BuildContext context) {
