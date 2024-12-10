@@ -89,10 +89,12 @@ class _InitialScreenState extends State<InitialScreen> {
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(1000),
           ),
-          child: Icon(
-            Icons.add,
-            size: 40,
-            color: Colors.grey[50],
+          child: const Text(
+            '+',
+            style: TextStyle(
+              color: MyColors.kFontePrimaria,
+              fontSize: 48,
+            ),
           ),
         ),
       ),
