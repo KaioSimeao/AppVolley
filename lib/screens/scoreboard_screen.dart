@@ -36,7 +36,7 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                         onPressed: () async {
                           Navigator.of(context).pop('/game_screen');
                         },
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.arrow_back,
                           color: MyColors.kFontePrimaria,
                         ),
@@ -50,7 +50,7 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                       ),
                       IconButton(
                         onPressed: () {},
-                        icon: Icon(
+                        icon: const Icon(
                           Icons.settings,
                           color: MyColors.kFontePrimaria,
                         ),
@@ -82,7 +82,7 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                       ),
                     ),
                     Flexible(
-                        flex: 2,
+                        flex: 4,
                         child: Center(
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
