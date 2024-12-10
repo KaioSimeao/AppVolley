@@ -15,7 +15,7 @@ class Teams extends StatelessWidget {
           child: Text(
             texto1,
             style: const TextStyle(
-              color: Color(0xFFFFA33B),
+              color: MyColors.kAmareloMostarda,
               fontSize: 45,
               fontFamily: 'ConcertOne',
             ),
@@ -25,7 +25,7 @@ class Teams extends StatelessWidget {
           textAlign: TextAlign.center,
           texto2,
           style: const TextStyle(
-              color: Color(0xff2B4A8E),
+              color: MyColors.kAzulMarinho,
               fontSize: 50,
               fontFamily: 'ConcertOne',
               fontWeight: FontWeight.w900),
@@ -35,7 +35,7 @@ class Teams extends StatelessWidget {
           child: Text(
             'jogadores',
             style: TextStyle(
-                color: Color(0xff2B4A8E),
+                color: MyColors.kAzulMarinho,
                 fontSize: 12,
                 fontFamily: 'ConcertOne',
                 fontWeight: FontWeight.bold),
