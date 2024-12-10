@@ -55,18 +55,3 @@ class Score extends StatelessWidget {
     );
   }
 }
-
-class ScoreText extends StatelessWidget {
-  final String nome;
-  final Color cor;
-  const ScoreText({super.key, required this.nome, required this.cor});
-
-  @override
-  Widget build(BuildContext context) {
-    return Text(
-      '25',
-      style: TextStyle(
-          color: cor, fontSize: 25, fontFamily: 'ConcertOne'),
-    );
-  }
-}
