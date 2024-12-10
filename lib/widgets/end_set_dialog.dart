@@ -3,7 +3,18 @@ import 'package:avaliacao_1/widgets/retangular_button.dart';
 import 'package:flutter/material.dart';
 
 class EndSetDialog extends StatelessWidget {
-  const EndSetDialog({super.key});
+  final String titulo;
+  final String vencedor;
+  final Function novoSet;
+  final bool vencedorVisivel;
+
+  const EndSetDialog({
+    super.key,
+    required this.titulo,
+    required this.vencedor,
+    required this.novoSet,
+    required this.vencedorVisivel,
+  });
 
   @override
   Widget build(BuildContext context) {
