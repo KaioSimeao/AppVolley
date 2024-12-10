@@ -11,7 +11,7 @@ class PlusButton extends StatelessWidget {
           backgroundColor: const Color(0xff2B4A8E),
           shape: const CircleBorder(),
           padding: const EdgeInsets.symmetric(horizontal: 1)),
-      onPressed: () => func,
+      onPressed: () => func(),
       child: Icon(
         Icons.add,
         size: 40,
