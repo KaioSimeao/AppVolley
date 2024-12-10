@@ -97,11 +97,9 @@ class _GameScreenState extends State<GameScreen> {
                       child: Column(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: [
-                          const Padding(
-                            padding: EdgeInsets.symmetric(horizontal: 50),
-                            child: Row(
-                              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                              children: [
+                          const Row(
+                            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                            children: [
                                 TeamCard(
                                   letra: 'A',
                                   nome: 'ziraldos',
