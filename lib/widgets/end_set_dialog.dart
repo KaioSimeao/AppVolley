@@ -61,8 +61,8 @@ class EndSetDialog extends StatelessWidget {
                   RetangularButton(
                     texto: 'Terminar',
                     color: Colors.white,
-                    funcao: () async {
-                      Navigator.of(context).pop('/');
+                    funcao: () {
+                      Navigator.of(context).popUntil((route) => route.isFirst);
                     },
                   ),
                   RetangularButton(
