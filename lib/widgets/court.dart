@@ -2,11 +2,13 @@ import 'package:avaliacao_1/themes/constants.dart';
 import 'package:flutter/material.dart';
 
 class Court extends StatefulWidget {
+  final bool ladodireito;
   final bool ladoesquerdo;
   final int pontoladoesquerdo;
   final int pontoladodireito;
   const Court(
       {super.key,
+      required this.ladodireito,
       required this.ladoesquerdo,
       required this.pontoladodireito,
       required this.pontoladoesquerdo});
