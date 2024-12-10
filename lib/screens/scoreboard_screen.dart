@@ -92,12 +92,15 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                                 'Ziraldos',
                                 'Ziraldos',
                                 'Sparrings'
-                              ], letra: 'A'),
-                              Score(times: [
-                                'Sparrings',
-                                'Sicranos',
-                                'Autoconviadados',
-                                'Autoconviadados'
+                                  ],
+                                  letra: 'A'),
+                              Score(
+                                  ladoesquerdo: false,
+                                  times: [
+                                    'Sparrings',
+                                    'Sicranos',
+                                    'Autoconviadados',
+                                    'Autoconviadados'
                               ], letra: 'B'),
                             ],
                           ),
