@@ -15,6 +15,11 @@ class GameScreen extends StatefulWidget {
 }
 
 class _GameScreenState extends State<GameScreen> {
+  bool _bolaladodireito = false;
+  bool _bolaladoesquerdo = false;
+  int _pontuacaoladodireito = 0;
+  int _pontuacaoladoesquerdo = 0;
+
   @override
   void initState() {
     super.initState();
