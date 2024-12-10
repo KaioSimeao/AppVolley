@@ -87,8 +87,18 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
-                              Score(times: [''], letra: 'A'),
-                              Score(times: [''], letra: 'B'),
+                              Score(times: [
+                                'Ziraldos',
+                                'Ziraldos',
+                                'Ziraldos',
+                                'Sparrings'
+                              ], letra: 'A'),
+                              Score(times: [
+                                'Sparrings',
+                                'Sicranos',
+                                'Autoconviadados',
+                                'Autoconviadados'
+                              ], letra: 'B'),
                             ],
                           ),
                         )),
