@@ -19,7 +19,7 @@ class BottomScoreBar extends StatelessWidget {
         children: [
           RichText(
             text: const TextSpan(
-              style: MyTextStyle.text30,
+              style: MyTextStyle.kTexto30,
               children: [
                 TextSpan(text: 'Ziraldos: '),
                 TextSpan(
@@ -29,7 +29,7 @@ class BottomScoreBar extends StatelessWidget {
           ),
           RichText(
             text: const TextSpan(
-              style: MyTextStyle.text30,
+              style: MyTextStyle.kTexto30,
               children: [
                 TextSpan(text: 'Sicranos: '),
                 TextSpan(
@@ -39,7 +39,7 @@ class BottomScoreBar extends StatelessWidget {
           ),
           RichText(
             text: const TextSpan(
-              style: MyTextStyle.text30,
+              style: MyTextStyle.kTexto30,
               children: [
                 TextSpan(text: 'Autoconvidados: '),
                 TextSpan(
@@ -49,7 +49,7 @@ class BottomScoreBar extends StatelessWidget {
           ),
           RichText(
             text: const TextSpan(
-              style: MyTextStyle.text30,
+              style: MyTextStyle.kTexto30,
               children: [
                 TextSpan(text: 'Sparrings: '),
                 TextSpan(
