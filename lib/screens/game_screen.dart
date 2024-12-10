@@ -115,7 +115,8 @@ class _GameScreenState extends State<GameScreen> {
                                   nome: 'Sicranos',
                                   teamName: true,
                                 ),
-                              ],
+                              ),
+                            ],
                           ),
                           const Court(
                             ladoesquerdo: true,
