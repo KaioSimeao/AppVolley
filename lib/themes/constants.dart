@@ -10,12 +10,14 @@ class MyColors {
 }
 
 class MyTextStyle {
-  static const TextStyle text20 = TextStyle(
-      color: MyColors.kCorFontePrimaria,
-      fontSize: 20,
-      fontFamily: 'ConcertOne');
-  static const TextStyle text30 = TextStyle(
-      color: MyColors.kCorFontePrimaria,
-      fontSize: 30,
-      fontFamily: 'ConcertOne');
+  static const TextStyle kTexto20 = TextStyle(
+      color: MyColors.kFontePrimaria, fontSize: 20, fontFamily: 'ConcertOne');
+  static const TextStyle kTexto25 = TextStyle(
+      color: MyColors.kFontePrimaria, fontSize: 25, fontFamily: 'ConcertOne');
+  static const TextStyle kTexto30 = TextStyle(
+      color: MyColors.kFontePrimaria, fontSize: 30, fontFamily: 'ConcertOne');
+  static const TextStyle kTextoAzul25 = TextStyle(
+      color: MyColors.kAzulMarinho, fontSize: 25, fontFamily: 'ConcertOne');
+  static const TextStyle kTextoAmarelo25 = TextStyle(
+      color: MyColors.kAmareloMostarda, fontSize: 25, fontFamily: 'ConcertOne');
 }
