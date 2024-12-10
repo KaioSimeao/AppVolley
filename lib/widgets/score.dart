@@ -1,3 +1,4 @@
+import 'package:avaliacao_1/themes/constants.dart';
 import 'package:avaliacao_1/widgets/team_card.dart';
 import 'package:flutter/material.dart';
 
@@ -32,67 +33,19 @@ class Score extends StatelessWidget {
               Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text(
-                    'Ziraldos',
-                    style: TextStyle(
-                        color: Colors.grey[50],
-                        fontSize: 25,
-                        fontFamily: 'ConcertOne'),
-                  ),
-                  Text(
-                    'Ziraldos',
-                    style: TextStyle(
-                        color: Colors.grey[50],
-                        fontSize: 25,
-                        fontFamily: 'ConcertOne'),
-                  ),
-                  Text(
-                    'Ziraldos',
-                    style: TextStyle(
-                        color: Colors.grey[50],
-                        fontSize: 25,
-                        fontFamily: 'ConcertOne'),
-                  ),
-                  Text(
-                    'Sparrings',
-                    style: TextStyle(
-                        color: Colors.grey[50],
-                        fontSize: 25,
-                        fontFamily: 'ConcertOne'),
-                  ),
+                  Text(times[0], style: MyTextStyle.kTexto25),
+                  Text(times[1], style: MyTextStyle.kTexto25),
+                  Text(times[2], style: MyTextStyle.kTexto25),
+                  Text(times[3], style: MyTextStyle.kTexto25),
                 ],
               ),
               const Column(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Text(
-                    '25',
-                    style: TextStyle(
-                        color: Color(0xff2B4A8E),
-                        fontSize: 25,
-                        fontFamily: 'ConcertOne'),
-                  ),
-                  Text(
-                    '25',
-                    style: TextStyle(
-                        color: Color(0xff2B4A8E),
-                        fontSize: 25,
-                        fontFamily: 'ConcertOne'),
-                  ),
-                  Text(
-                    '10',
-                    style: TextStyle(
-                        color: Color(0xFFFFA33B),
-                        fontSize: 25,
-                        fontFamily: 'ConcertOne'),
-                  ),
-                  Text(
-                    '25',
-                    style: TextStyle(
-                        color: Color(0xff2B4A8E),
-                        fontSize: 25,
-                        fontFamily: 'ConcertOne'),
-                  ),
+                  Text('25', style: MyTextStyle.kTextoAzul25),
+                  Text('25', style: MyTextStyle.kTextoAzul25),
+                  Text('10', style: MyTextStyle.kTextoAmarelo25),
+                  Text('25', style: MyTextStyle.kTextoAzul25)
                 ],
               ),
             ],
