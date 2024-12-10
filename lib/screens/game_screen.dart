@@ -312,3 +312,38 @@ class _GameScreenState extends State<GameScreen> {
   }
 }
 
+class CheckVictory {
+  void verificaVitoria({
+    required BuildContext context,
+    required String vencedor,
+    required int pontuacaoEsquerda,
+    required int pontuacaoDireita,
+    required Function novoSet,
+  }) {
+    // Verifica condições de vitória
+    if (pontuacaoEsquerda >= 25 &&
+        (pontuacaoEsquerda - pontuacaoDireita) >= 2) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        mostrarDialogo(context, vencedor, novoSet);
+      });
+    } else if (pontuacaoDireita >= 25 &&
+        (pontuacaoDireita - pontuacaoEsquerda) >= 2) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        mostrarDialogo(context, vencedor, novoSet);
+      });
+    }
+  }
+}
+
+void mostrarDialogo(BuildContext context, String vencedor, Function novoSet) {
+  showDialog(
+    context: context,
+    barrierColor: Colors.transparent,
+    builder: (context) => EndSetDialog(
+      titulo: 'FIM DE SET',
+      vencedor: vencedor,
+      novoSet: novoSet,
+      vencedorVisivel: true,
+    ),
+  );
+}
