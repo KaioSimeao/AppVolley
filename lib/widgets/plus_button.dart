@@ -13,10 +13,12 @@ class PlusButton extends StatelessWidget {
           shape: const CircleBorder(),
           padding: const EdgeInsets.symmetric(horizontal: 1)),
       onPressed: () => func(),
-      child: Icon(
-        Icons.add,
-        size: 40,
-        color: Colors.grey[50],
+      child: const Text(
+        '+',
+        style: TextStyle(
+          color: MyColors.kFontePrimaria,
+          fontSize: 44,
+        ),
       ),
     );
   }
