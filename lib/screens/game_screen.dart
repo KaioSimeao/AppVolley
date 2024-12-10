@@ -89,27 +89,80 @@ class _GameScreenState extends State<GameScreen> {
                 flex: 8,
                 child: Row(
                   children: [
-                    const Flexible(
+                    Flexible(
                       flex: 1,
-                      child: Align(
-                        alignment: Alignment.centerLeft,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            SideButton(
-                                orientation: SideOrientation.left,
-                                texto: "Ace"),
-                            SideButton(
-                                orientation: SideOrientation.left,
-                                texto: "Ataque"),
-                            SideButton(
-                                orientation: SideOrientation.left,
-                                texto: "Bloqueio"),
-                            SideButton(
-                                orientation: SideOrientation.left,
-                                texto: "Erro")
-                          ],
-                        ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SideButton(
+                            orientation: SideOrientation.left,
+                            texto: "Ace",
+                            funcao: () => {
+                              setState(() {
+                                _pontuacaoladoesquerdo++;
+                                _bolaladoesquerdo = true;
+                                _bolaladodireito = false;
+                                CheckVictory().verificaVitoria(
+                                    context: context,
+                                    vencedor: 'Time A',
+                                    pontuacaoEsquerda: _pontuacaoladoesquerdo,
+                                    pontuacaoDireita: _pontuacaoladodireito,
+                                    novoSet: novoSet);
+                              })
+                            },
+                          ),
+                          SideButton(
+                            orientation: SideOrientation.left,
+                            texto: "Ataque",
+                            funcao: () => {
+                              setState(() {
+                                _pontuacaoladoesquerdo++;
+                                _bolaladoesquerdo = true;
+                                _bolaladodireito = false;
+                                CheckVictory().verificaVitoria(
+                                    context: context,
+                                    vencedor: 'Time A',
+                                    pontuacaoEsquerda: _pontuacaoladoesquerdo,
+                                    pontuacaoDireita: _pontuacaoladodireito,
+                                    novoSet: novoSet);
+                              })
+                            },
+                          ),
+                          SideButton(
+                            orientation: SideOrientation.left,
+                            texto: "Bloqueio",
+                            funcao: () => {
+                              setState(() {
+                                _pontuacaoladoesquerdo++;
+                                _bolaladoesquerdo = true;
+                                _bolaladodireito = false;
+                                CheckVictory().verificaVitoria(
+                                    context: context,
+                                    vencedor: 'Time A',
+                                    pontuacaoEsquerda: _pontuacaoladoesquerdo,
+                                    pontuacaoDireita: _pontuacaoladodireito,
+                                    novoSet: novoSet);
+                              })
+                            },
+                          ),
+                          SideButton(
+                            orientation: SideOrientation.left,
+                            texto: "Erro",
+                            funcao: () => {
+                              setState(() {
+                                _pontuacaoladoesquerdo++;
+                                _bolaladoesquerdo = true;
+                                _bolaladodireito = false;
+                                CheckVictory().verificaVitoria(
+                                    context: context,
+                                    vencedor: 'Time A',
+                                    pontuacaoEsquerda: _pontuacaoladoesquerdo,
+                                    pontuacaoDireita: _pontuacaoladodireito,
+                                    novoSet: novoSet);
+                              })
+                            },
+                          ),
+                        ],
                       ),
                     ),
                     Flexible(
@@ -121,15 +174,13 @@ class _GameScreenState extends State<GameScreen> {
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
                               Expanded(
-                                flex: 1,
                                 child: TeamCard(
                                   letra: 'A',
-                                  nome: 'ziraldos',
+                                  nome: 'Ziraldos',
                                   teamName: true,
                                 ),
                               ),
                               Expanded(
-                                flex: 1,
                                 child: TeamCard(
                                   letra: 'B',
                                   nome: 'Sicranos',
@@ -138,22 +189,25 @@ class _GameScreenState extends State<GameScreen> {
                               ),
                             ],
                           ),
-                          const Court(
-                            ladoesquerdo: true,
-                            pontoladodireito: 0,
-                            pontoladoesquerdo: 0,
+                          Court(
+                            ladodireito: _bolaladodireito,
+                            ladoesquerdo: _bolaladoesquerdo,
+                            pontoladodireito: _pontuacaoladodireito,
+                            pontoladoesquerdo: _pontuacaoladoesquerdo,
                           ),
                           RichText(
-                            text: TextSpan(
+                            text: const TextSpan(
                               style: TextStyle(
-                                  color: Colors.grey[50],
-                                  fontSize: 15,
-                                  fontFamily: 'ConcertOne'),
-                              children: const [
-                                TextSpan(text: 'Tempo de jogo'),
+                                color: MyColors.kFontePrimaria,
+                                fontSize: 15,
+                                fontFamily: 'ConcertOne',
+                              ),
+                              children: [
+                                TextSpan(text: 'Tempo de jogo: '),
                                 TextSpan(
-                                    text: " 1:14'00''",
-                                    style: TextStyle(fontSize: 10))
+                                  text: "1:14'00''",
+                                  style: TextStyle(fontSize: 12),
+                                ),
                               ],
                             ),
                           ),
@@ -167,31 +221,84 @@ class _GameScreenState extends State<GameScreen> {
                                     .pushNamed('/scoreboard_screen');
                               },
                             ),
-                          )
+                          ),
                         ],
                       ),
                     ),
-                    const Flexible(
+                    Flexible(
                       flex: 1,
-                      child: Align(
-                        alignment: Alignment.centerRight,
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceAround,
-                          children: [
-                            SideButton(
-                                orientation: SideOrientation.right,
-                                texto: "Ace"),
-                            SideButton(
-                                orientation: SideOrientation.right,
-                                texto: "Ataque"),
-                            SideButton(
-                                orientation: SideOrientation.right,
-                                texto: "Bloqueio"),
-                            SideButton(
-                                orientation: SideOrientation.right,
-                                texto: "Erro")
-                          ],
-                        ),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        children: [
+                          SideButton(
+                            orientation: SideOrientation.right,
+                            texto: "Ace",
+                            funcao: () => {
+                              setState(() {
+                                _pontuacaoladodireito++;
+                                _bolaladoesquerdo = false;
+                                _bolaladodireito = true;
+                                CheckVictory().verificaVitoria(
+                                    context: context,
+                                    vencedor: 'Time B',
+                                    pontuacaoEsquerda: _pontuacaoladoesquerdo,
+                                    pontuacaoDireita: _pontuacaoladodireito,
+                                    novoSet: novoSet);
+                              })
+                            },
+                          ),
+                          SideButton(
+                            orientation: SideOrientation.right,
+                            texto: "Ataque",
+                            funcao: () => {
+                              setState(() {
+                                _pontuacaoladodireito++;
+                                _bolaladoesquerdo = false;
+                                _bolaladodireito = true;
+                                CheckVictory().verificaVitoria(
+                                    context: context,
+                                    vencedor: 'Time B',
+                                    pontuacaoEsquerda: _pontuacaoladoesquerdo,
+                                    pontuacaoDireita: _pontuacaoladodireito,
+                                    novoSet: novoSet);
+                              })
+                            },
+                          ),
+                          SideButton(
+                            orientation: SideOrientation.right,
+                            texto: "Bloqueio",
+                            funcao: () => {
+                              setState(() {
+                                _pontuacaoladodireito++;
+                                _bolaladoesquerdo = false;
+                                _bolaladodireito = true;
+                                CheckVictory().verificaVitoria(
+                                    context: context,
+                                    vencedor: 'Time B',
+                                    pontuacaoEsquerda: _pontuacaoladoesquerdo,
+                                    pontuacaoDireita: _pontuacaoladodireito,
+                                    novoSet: novoSet);
+                              })
+                            },
+                          ),
+                          SideButton(
+                            orientation: SideOrientation.right,
+                            texto: "Erro",
+                            funcao: () => {
+                              setState(() {
+                                _pontuacaoladodireito++;
+                                _bolaladoesquerdo = false;
+                                _bolaladodireito = true;
+                                CheckVictory().verificaVitoria(
+                                    context: context,
+                                    vencedor: 'Time B',
+                                    pontuacaoEsquerda: _pontuacaoladoesquerdo,
+                                    pontuacaoDireita: _pontuacaoladodireito,
+                                    novoSet: novoSet);
+                              })
+                            },
+                          ),
+                        ],
                       ),
                     ),
                   ],
