@@ -23,11 +23,11 @@ class EndSetDialog extends StatelessWidget {
       child: Container(
         margin: const EdgeInsets.symmetric(horizontal: 90),
         decoration: BoxDecoration(
-          color: const Color(0xffC2F2F8).withOpacity(0.5),
+          color: MyColors.kGelo.withOpacity(0.7),
           borderRadius: BorderRadius.circular(30),
           border: Border.all(
             width: 2,
-            color: Colors.white,
+            color: MyColors.kCorFontePrimaria,
           ),
         ),
         child: Padding(
@@ -36,19 +36,19 @@ class EndSetDialog extends StatelessWidget {
             mainAxisSize: MainAxisSize.max,
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
-              const Text(
-                'FIM DE SET',
-                style: TextStyle(
-                  color: Color(0xff2B4A8E),
+              Text(
+                titulo,
+                style: const TextStyle(
+                  color: MyColors.kAzulMarinho,
                   fontSize: 40,
                   fontFamily: 'ConcertOne',
                 ),
               ),
-              const Text(
-                'Autoconviadados',
-                style: TextStyle(
-                  color: Color(0xff2B4A8E),
-                  fontSize: 80,
+              Text(
+                vencedor,
+                style: const TextStyle(
+                  color: MyColors.kAzulMarinho,
+                  fontSize: 70,
                   fontFamily: 'ConcertOne',
                 ),
               ),
@@ -59,8 +59,8 @@ class EndSetDialog extends StatelessWidget {
                   child: Text(
                     'VENCEU',
                     style: TextStyle(
-                      color: Color(0xff2B4A8E),
-                      fontSize: 30,
+                      color: MyColors.kAzulMarinho,
+                      fontSize: 40,
                       fontFamily: 'ConcertOne',
                     ),
                   ),
@@ -71,7 +71,7 @@ class EndSetDialog extends StatelessWidget {
                 children: [
                   RetangularButton(
                     texto: 'Terminar',
-                    color: Colors.white,
+                    color:MyColors.kCorFontePrimaria,
                     funcao: () {
                       Navigator.of(context).popUntil((route) => route.isFirst);
                     },
