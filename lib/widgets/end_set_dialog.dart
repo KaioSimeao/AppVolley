@@ -70,8 +70,9 @@ class EndSetDialog extends StatelessWidget {
                     color: MyColors.kAmareloMostarda,
                     funcao: () {
                       Navigator.of(context).pop();
+                      novoSet();
                     },
-                  )
+                  ),
                 ],
               ),
             ],
