@@ -68,8 +68,8 @@ class EndSetDialog extends StatelessWidget {
                   RetangularButton(
                     texto: 'Novo Set',
                     color: MyColors.kAmareloMostarda,
-                    funcao: () async {
-                      await Navigator.of(context).pushNamed('/');
+                    funcao: () {
+                      Navigator.of(context).pop();
                     },
                   )
                 ],
