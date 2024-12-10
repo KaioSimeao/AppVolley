@@ -32,6 +32,15 @@ class _GameScreenState extends State<GameScreen> {
     super.dispose();
   }
 
+  void novoSet() {
+    setState(() {
+      _pontuacaoladodireito = 0;
+      _pontuacaoladoesquerdo = 0;
+      _bolaladoesquerdo = false;
+      _bolaladodireito = false;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
