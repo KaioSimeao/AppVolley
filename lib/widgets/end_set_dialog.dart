@@ -27,7 +27,7 @@ class EndSetDialog extends StatelessWidget {
           borderRadius: BorderRadius.circular(30),
           border: Border.all(
             width: 2,
-            color: MyColors.kCorFontePrimaria,
+            color: MyColors.kFontePrimaria,
           ),
         ),
         child: Padding(
@@ -71,7 +71,7 @@ class EndSetDialog extends StatelessWidget {
                 children: [
                   RetangularButton(
                     texto: 'Terminar',
-                    color:MyColors.kCorFontePrimaria,
+                    color: MyColors.kFontePrimaria,
                     funcao: () {
                       Navigator.of(context).popUntil((route) => route.isFirst);
                     },
