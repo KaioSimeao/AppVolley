@@ -38,8 +38,8 @@ class _CourtState extends State<Court> {
 
 Widget buildSide(bool visible, int points, Color color) {
   return Container(
-    width: 170,
-    height: 135,
+    width: 190,
+    height: 150,
     decoration: BoxDecoration(
       color: color,
       border: Border.all(
