@@ -20,7 +20,7 @@ class LogoVolley extends StatelessWidget {
                 width: 70,
                 height: 70,
               ),
-              Text(
+              const Text(
                 'Volley',
                 style: TextStyle(
                     color: MyColors.kFontePrimaria,
@@ -30,7 +30,7 @@ class LogoVolley extends StatelessWidget {
               ),
             ],
           ),
-          Positioned(
+          const Positioned(
             top: 67,
             left: 126,
             child: Text(
