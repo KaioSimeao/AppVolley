@@ -70,13 +70,13 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: [
                             Icon(Icons.bar_chart_rounded,
-                                color: MyColors.kCorFontePrimaria),
+                                color: MyColors.kFontePrimaria),
                             Icon(Icons.bar_chart_rounded,
-                                color: MyColors.kCorFontePrimaria),
+                                color: MyColors.kFontePrimaria),
                             Icon(Icons.bar_chart_rounded,
-                                color: MyColors.kCorFontePrimaria),
+                                color: MyColors.kFontePrimaria),
                             Icon(Icons.bar_chart_rounded,
-                                color: MyColors.kCorFontePrimaria),
+                                color: MyColors.kFontePrimaria),
                           ],
                         ),
                       ),
@@ -100,19 +100,19 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                           children: [
                             Text(
                               "0:24'90''",
-                              style: MyTextStyle.text20,
+                              style: MyTextStyle.kTexto20,
                             ),
                             Text(
                               "0:14'23''",
-                              style: MyTextStyle.text20,
+                              style: MyTextStyle.kTexto20,
                             ),
                             Text(
                               "0:35'04''",
-                              style: MyTextStyle.text20,
+                              style: MyTextStyle.kTexto20,
                             ),
                             Text(
                               "0:11'29''",
-                              style: MyTextStyle.text20,
+                              style: MyTextStyle.kTexto20,
                             ),
                           ],
                         ),
