@@ -57,23 +57,27 @@ class _GameScreenState extends State<GameScreen> {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       IconButton(
-                          onPressed: () {
-                            Navigator.of(context).pop('/');
-                          },
-                          icon: Icon(
-                            Icons.arrow_back,
+                        onPressed: () => Navigator.of(context).pop('/'),
+                        icon: const Icon(
+                          Icons.arrow_back,
                           color: MyColors.kFontePrimaria,
                         ),
                       ),
                       IconButton(
-                          onPressed: () async {
-                            await showDialog(
-                                context: context,
-                                barrierColor: Colors.transparent,
-                                builder: (context) => const EndSetDialog());
-                          },
-                          icon: Icon(
-                            Icons.settings,
+                        onPressed: () async {
+                          await showDialog(
+                            context: context,
+                            barrierColor: Colors.transparent,
+                            builder: (context) => EndSetDialog(
+                              titulo: 'CONFIGURAÇÕES',
+                              vencedor: 'Pausado',
+                              novoSet: novoSet,
+                              vencedorVisivel: false,
+                            ),
+                          );
+                        },
+                        icon: const Icon(
+                          Icons.settings,
                           color: MyColors.kFontePrimaria,
                         ),
                       ),
