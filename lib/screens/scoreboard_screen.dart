@@ -38,7 +38,7 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                         },
                         icon: Icon(
                           Icons.arrow_back,
-                          color: Colors.grey[50],
+                          color: MyColors.kFontePrimaria,
                         ),
                       ),
                       const Text(
@@ -52,7 +52,7 @@ class _ScoreboardScreenState extends State<ScoreboardScreen> {
                         onPressed: () {},
                         icon: Icon(
                           Icons.settings,
-                          color: Colors.grey[50],
+                          color: MyColors.kFontePrimaria,
                         ),
                       )
                     ],

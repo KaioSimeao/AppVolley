@@ -10,11 +10,11 @@ class Score extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 200,
+      width: 220,
       height: 220,
       decoration: BoxDecoration(
-        color: const Color(0xffF77859),
-        border: Border.all(color: Colors.grey.shade50, width: 3),
+        color: MyColors.kLaranjaCenoura,
+        border: Border.all(color: MyColors.kFontePrimaria, width: 3),
       ),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,

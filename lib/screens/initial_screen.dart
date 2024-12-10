@@ -64,7 +64,7 @@ class _InitialScreenState extends State<InitialScreen> {
                       child: const Text(
                         'Jogo casado',
                         style: TextStyle(
-                            color: Color(0xffC2F2F8),
+                            color: MyColors.kGelo,
                             fontSize: 25,
                             fontFamily: 'ConcertOne'),
                       ),
@@ -72,7 +72,7 @@ class _InitialScreenState extends State<InitialScreen> {
                   ),
                   RetangularButton(
                     texto: 'Iniciar',
-                    color: Colors.white,
+                    color: MyColors.kFontePrimaria,
                     funcao: () {
                       Navigator.pushNamed(context, '/game_screen');
                     },
@@ -84,7 +84,7 @@ class _InitialScreenState extends State<InitialScreen> {
         ),
         floatingActionButton: FloatingActionButton(
           onPressed: () {},
-          backgroundColor: const Color(0xff2B4A8E),
+          backgroundColor: MyColors.kAzulMarinho,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(1000),
           ),

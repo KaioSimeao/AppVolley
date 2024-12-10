@@ -22,7 +22,7 @@ class LogoVolley extends StatelessWidget {
               Text(
                 'Volley',
                 style: TextStyle(
-                    color: Colors.grey[50],
+                    color: MyColors.kFontePrimaria,
                     fontSize: 50,
                     fontFamily: 'ConcertOne',
                     fontWeight: FontWeight.w300),
@@ -35,7 +35,7 @@ class LogoVolley extends StatelessWidget {
             child: Text(
               'do fim de semana',
               style: TextStyle(
-                  color: Colors.grey[50],
+                  color: MyColors.kFontePrimaria,
                   fontSize: 12,
                   fontFamily: 'ConcertOne',
                   fontWeight: FontWeight.w300),

@@ -47,8 +47,9 @@ class _GameScreenState extends State<GameScreen> {
                           },
                           icon: Icon(
                             Icons.arrow_back,
-                            color: Colors.grey[50],
-                          )),
+                          color: MyColors.kFontePrimaria,
+                        ),
+                      ),
                       IconButton(
                           onPressed: () async {
                             await showDialog(
@@ -58,8 +59,9 @@ class _GameScreenState extends State<GameScreen> {
                           },
                           icon: Icon(
                             Icons.settings,
-                            color: Colors.grey[50],
-                          ))
+                          color: MyColors.kFontePrimaria,
+                        ),
+                      ),
                     ],
                   ),
                 ),
@@ -140,7 +142,7 @@ class _GameScreenState extends State<GameScreen> {
                             padding: const EdgeInsets.only(bottom: 5),
                             child: RetangularButton(
                               texto: 'Placar Geral',
-                              color: Colors.white,
+                              color: MyColors.kFontePrimaria,
                               funcao: () {
                                 Navigator.of(context)
                                     .pushNamed('/scoreboard_screen');

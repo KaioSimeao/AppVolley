@@ -20,7 +20,7 @@ class RetangularButton extends StatelessWidget {
         height: 60,
         decoration: BoxDecoration(
           color: MyColors.kAzulMarinho,
-          border: Border.all(color: Colors.white, width: 3),
+          border: Border.all(color: MyColors.kFontePrimaria, width: 3),
           borderRadius: BorderRadius.circular(15),
         ),
         child: Center(

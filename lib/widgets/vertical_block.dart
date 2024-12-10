@@ -16,14 +16,14 @@ class VerticalBlock extends StatelessWidget {
           color: Colors.lightBlueAccent,
           border: Border.all(
             width: 2,
-            color: const Color(0xffC2F2F8),
+            color: MyColors.kGelo,
           ),
         ),
         child: Text(
           texto,
           textAlign: TextAlign.center,
           style: const TextStyle(
-            color: Color(0xffC2F2F8),
+            color: MyColors.kGelo,
             fontSize: 50,
             fontFamily: 'ConcertOne',
           ),

@@ -12,13 +12,14 @@ class TeamCard extends StatelessWidget {
       children: [
         ElevatedButton(
             style: ElevatedButton.styleFrom(
-                backgroundColor: const Color(0xffC2F2F8),
-                shape: const CircleBorder()),
+              backgroundColor: MyColors.kGelo,
+              shape: const CircleBorder(),
+            ),
             onPressed: () {},
             child: Text(
               letra,
               style: const TextStyle(
-                  color: Color(0xff2B4A8E),
+                  color: MyColors.kAzulMarinho,
                   fontSize: 27,
                   fontFamily: 'ConcertOne'),
             )),
@@ -27,7 +28,7 @@ class TeamCard extends StatelessWidget {
           child: Text(
             nome,
             style: const TextStyle(
-                color: Color(0xff2B4A8E),
+                color: MyColors.kAzulMarinho,
                 fontSize: 30,
                 fontFamily: 'ConcertOne'),
           ),

@@ -5,7 +5,7 @@ class MyColors {
   static const Color kAzulMarinho = Color(0xff2B4A8E);
   static const Color kLaranjaCenoura = Color(0xffF77859);
   static const Color kGelo = Color(0xffC2F2F8);
-  static const Color kAmareloMostarda = Color(0xFFFFA33B);
+  static const Color kAmareloMostarda = Color(0xFFFFC13B);
   static const Color kFontePrimaria = Color(0xFFFAFAFA);
 }
 
@@ -17,7 +17,7 @@ class MyTextStyle {
   static const TextStyle kTexto30 = TextStyle(
       color: MyColors.kFontePrimaria, fontSize: 30, fontFamily: 'ConcertOne');
   static const TextStyle kTextoAzul25 = TextStyle(
-      color: MyColors.kAzulMarinho, fontSize: 25, fontFamily: 'ConcertOne');
+      color: MyColors.kAzulMarinho, fontSize: 30, fontFamily: 'ConcertOne');
   static const TextStyle kTextoAmarelo25 = TextStyle(
-      color: MyColors.kAmareloMostarda, fontSize: 25, fontFamily: 'ConcertOne');
+      color: MyColors.kAmareloMostarda, fontSize: 30, fontFamily: 'ConcertOne');
 }

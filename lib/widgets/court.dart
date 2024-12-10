@@ -45,7 +45,7 @@ Widget buildSide(bool visible, int points, Color color) {
     decoration: BoxDecoration(
       color: color,
       border: Border.all(
-        color: Colors.grey.shade50,
+        color: MyColors.kFontePrimaria,
         width: 3,
       ),
     ),
@@ -62,8 +62,8 @@ Widget buildSide(bool visible, int points, Color color) {
                 ),
           Text(
             points.toString(),
-            style: TextStyle(
-              color: Colors.grey[50],
+            style: const TextStyle(
+              color: MyColors.kFontePrimaria,
               fontSize: 50,
               fontFamily: 'ConcertOne',
             ),
