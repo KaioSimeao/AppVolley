@@ -1,8 +1,7 @@
-import 'package:avaliacao_1/themes/constants.dart';
 import 'package:avaliacao_1/widgets/court.dart';
 import 'package:avaliacao_1/widgets/end_set_dialog.dart';
-import 'package:avaliacao_1/widgets/plus_button.dart';
 import 'package:avaliacao_1/widgets/retangular_button.dart';
+import 'package:avaliacao_1/widgets/side_button.dart';
 import 'package:avaliacao_1/widgets/team_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
