@@ -24,13 +24,13 @@ class _CourtState extends State<Court> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
         buildSide(
-          !widget.ladoesquerdo,
-          widget.pontoladodireito,
+          widget.ladoesquerdo,
+          widget.pontoladoesquerdo,
           MyColors.kLaranjaCenoura,
         ),
         buildSide(
-          widget.ladoesquerdo,
-          widget.pontoladoesquerdo,
+          widget.ladodireito,
+          widget.pontoladodireito,
           MyColors.kLaranjaCenoura,
         )
       ],
