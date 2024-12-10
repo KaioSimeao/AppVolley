@@ -52,10 +52,10 @@ class EndSetDialog extends StatelessWidget {
                   fontFamily: 'ConcertOne',
                 ),
               ),
-              const Align(
-                alignment: Alignment.centerRight,
-                child: Padding(
-                  padding: EdgeInsets.only(right: 32),
+              Visibility(
+                visible: vencedorVisivel,
+                child: const Align(
+                  alignment: Alignment.centerRight,
                   child: Text(
                     'VENCEU',
                     style: TextStyle(
@@ -67,7 +67,7 @@ class EndSetDialog extends StatelessWidget {
                 ),
               ),
               Row(
-                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   RetangularButton(
                     texto: 'Terminar',
