@@ -7,8 +7,13 @@ enum SideOrientation { left, right }
 class SideButton extends StatelessWidget {
   final SideOrientation orientation;
   final String texto;
+  final Function funcao;
 
-  const SideButton({super.key, required this.orientation, required this.texto});
+  const SideButton(
+      {super.key,
+      required this.orientation,
+      required this.texto,
+      required this.funcao});
 
   @override
   Widget build(BuildContext context) {
@@ -18,8 +23,9 @@ class SideButton extends StatelessWidget {
               height: 50,
               width: 50,
               child: PlusButton(
-                func: () {},
-              ))
+                func: funcao,
+              ),
+            )
           : null,
       title: Text(
         texto,
@@ -29,7 +35,13 @@ class SideButton extends StatelessWidget {
         style: MyTextStyle.text30,
       ),
       trailing: orientation == SideOrientation.right
-          ? SizedBox(height: 50, width: 50, child: PlusButton(func: () {}))
+          ? SizedBox(
+              height: 50,
+              width: 50,
+              child: PlusButton(
+                func: funcao,
+              ),
+            )
           : null,
     );
   }
