@@ -100,18 +100,22 @@ class _GameScreenState extends State<GameScreen> {
                           const Row(
                             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                             children: [
-                                TeamCard(
+                              Expanded(
+                                flex: 1,
+                                child: TeamCard(
                                   letra: 'A',
                                   nome: 'ziraldos',
                                   teamName: true,
                                 ),
-                                TeamCard(
+                              ),
+                              Expanded(
+                                flex: 1,
+                                child: TeamCard(
                                   letra: 'B',
-                                  nome: 'Autoconvidados',
+                                  nome: 'Sicranos',
                                   teamName: true,
                                 ),
                               ],
-                            ),
                           ),
                           const Court(
                             ladoesquerdo: true,
